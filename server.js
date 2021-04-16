@@ -29,7 +29,7 @@ const client = new MongoClient(uri, {
 });
 
 client.connect((err) => {
-  const courseCollection = client.db(`${process.env.DB_NAME}`).collection("platter");
+  const courseCollection = client.db(`${process.env.DB_NAME}`).collection("departments");
   const serviceCollection = client.db(`${process.env.DB_NAME}`).collection("service");
   const reviewCollection = client.db(`${process.env.DB_NAME}`).collection("review");
   const adminCollection = client.db(`${process.env.DB_NAME}`).collection("admin");
